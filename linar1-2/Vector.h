@@ -23,10 +23,6 @@ public:
 		this->y = y;
 	}
 	/*
-	* \breif коструктор копирования
-	*/
-	Vector(const Vector& these, const Vector& other) {}
-	/*
 	* \breif деструктор по умочанию
 	*/
 	~Vector() = default;
@@ -66,6 +62,5 @@ public:
 	* \breif длинна вектора
 	*/
 	double lenght() const;
-
 
 };
