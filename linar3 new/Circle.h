@@ -10,6 +10,7 @@ private:
 public:
 	/*
 	* \breif конструктор с параметрами
+	* \param [in] Радиус окружности
 	*/
 	Circle(const double r);
 	/*
@@ -19,7 +20,7 @@ public:
 	/*
 	* \breif дистркутор по умолчанию
 	*/
-	~Circle() = default;
+	virtual ~Circle() = default;
 	/*
 	* \breif перегруженный оператор для вывода информации
 	*/

@@ -9,7 +9,7 @@ class Vector
 {
 private:
 	/*
-	* \breif стороны вектора
+	* \breif кординаты вектора
 	*/
 	double x;
 	double y;
@@ -17,11 +17,7 @@ public:
 	/*
 	* \breif конструктор с параметрами
 	*/
-	Vector(const double x,const double y)
-	{
-		this->x = x;
-		this->y = y;
-	}
+	Vector(const double x, const double y);
 	/*
 	* \breif деструктор по умочанию
 	*/

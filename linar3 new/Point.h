@@ -5,7 +5,7 @@ class Point
 {
 private:
 	/*
-	* \breif координаты и константа
+	* \breif координаты точки и константа
 	*/
 	double x;
 	double y;
@@ -13,6 +13,8 @@ private:
 public:
 	/*
 	* \breif конструктор с параметрами
+	* \param [in] Координата x
+	* \param [in] Координата y
 	*/
 	Point(const double x, const double y)
 	{
@@ -51,7 +53,7 @@ public:
 	/*
 	* \breif начало координат
 	*/
-	double begin() const;
+	double to_origin() const;
 protected:
 	/*
 	* \breif конструктор по умолчанию
