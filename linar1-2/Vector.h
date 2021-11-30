@@ -16,6 +16,8 @@ private:
 public:
 	/*
 	* \breif конструктор с параметрами
+	* \param [in] координата X
+	* \param [in] координата Y
 	*/
 	Vector(const double x, const double y);
 	/*
@@ -24,38 +26,52 @@ public:
 	~Vector() = default;
 	/*
 	* \brief перегруженный опретора сложения возвращаю сумму двух векторов
+	* \param [in] вектор 1
+	* \param [in] вектор 2
+	* \param [out] сумма векторов
 	*/
-	friend Vector operator+(const Vector& A, const Vector& B);
+	friend Vector operator+(const Vector& lhs, const Vector& rhs);
 	/*
 	* \breif перегруженынй опреатор вычитания возвращающий разницу веторов
+	* \param [in] вектор 1
+	* \param [in] вектор 2
+	* \param [out] разность векторов
 	*/
-	friend Vector operator-(const Vector& A, const Vector& B);
+	friend Vector operator-(const Vector& lhs, const Vector& rhs);
 	/*
 	* \breif перегруженный опреатор вывода выводящий общую информацию о векторе
 	*/
 	friend ostream& operator<<(ostream& os, const Vector& obj);
 	/*
 	* \breif перегруженынй опреатор умножения возвращающий скалярное произведение 
+	* \param [in] вектор 1
+	* \param [in] вектор 2
+	* \param [out] произведение векторов
 	*/
-	friend double operator*(const Vector& A, const Vector& B);
+	friend double operator*(const Vector& lhs, const Vector& rhs);
 	/*
-	* \breif сеттеры координат вектора
+	* \breif сеттер координаты X
+	* \param [in] координата X
 	*/
-	void set_x(const double x)
-	{
-		this->x = x;
-	}
-	void set_y(const double y)
-	{
-		this->y = y;
-	}
+	void set_x(const double x);
 	/*
-	* \breif геттеры координат
+	* \breif сеттер координаты Y
+	* \param [in] координата Y
+	*/
+	void set_y(const double y);
+	/*
+	* \breif геттер координаты X
+	* \param [out] координата X
 	*/
 	double get_x() const;
+	/*
+	* \breif геттер координаты Y
+	* \param [out] координата Y
+	*/
 	double get_y() const;
 	/*
-	* \breif длинна вектора
+	* \breif геттер длинны вектора
+	* \param [out] длинна вектора
 	*/
 	double lenght() const;
 

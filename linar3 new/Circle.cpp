@@ -7,12 +7,12 @@ ostream& operator<<(ostream& os, const Circle& obj)
 }
 Circle::Circle(const double r)
 {
-	if (!r > 0) throw("Окружность вырожденна");
+	if (r > 0)
 	::Point::set_x(r);
 }
 void Circle::set_x(const double r)
 {
-	if (!r > 0) throw("Окружность вырожденна");
+	if (r > 0)
 	::Point::set_x(r);
 }
 double Circle::get_r() const { return get_x(); }

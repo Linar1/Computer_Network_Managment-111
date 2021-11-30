@@ -20,7 +20,7 @@ public:
 	/*
 	* \breif дистркутор по умолчанию
 	*/
-	virtual ~Circle() = default;
+	~Circle() = default;
 	/*
 	* \breif перегруженный оператор для вывода информации
 	*/

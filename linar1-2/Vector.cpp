@@ -33,6 +33,8 @@ double Vector::lenght() const
 }
 Vector::Vector(const double x, const double y)
 {
-	this->x = x;
-	this->y = y;
+	set_x(x);
+	set_y(y);
 }
+void Vector::set_x(const double x) { this->x = x; }
+void Vector::set_y(const double y) { this->y = y; }

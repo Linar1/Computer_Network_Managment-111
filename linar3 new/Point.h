@@ -18,8 +18,8 @@ public:
 	*/
 	Point(const double x, const double y)
 	{
-		this->x = x;
-		this->y = y;
+		set_x(x);
+		set_y(y);
 	}
 	/*
 	* \breif конструктор копирования
@@ -28,7 +28,7 @@ public:
 	/*
 	* \breif деструктор по умолчанию
 	*/
-	~Point() = default;
+	virtual ~Point() {}
 	/*
 	* \breif функция вывода
 	*/
